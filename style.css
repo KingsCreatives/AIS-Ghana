@@ -9,6 +9,7 @@ body{
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -379,6 +380,7 @@ header h1 {
   position: sticky;
   border: 10px solid #fff;
 }
+
 
 .dep-header h2{
   position: relative;
