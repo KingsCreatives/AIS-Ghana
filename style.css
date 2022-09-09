@@ -336,56 +336,54 @@ header h1 {
 
 
 /*School departments placeholder*/
-
-.department-holder{
+.department-description,
+.dep-text
+{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(196,208,213,1);
-  padding-bottom: 50px;
-  gap: 30px;
+  background-color: rgb(196,208,213);
 }
 
-.dep-text{
-  text-align: center;
-  padding: 10px;
+.department-description{
+  gap:20px;
 }
 
-  /*Center h1 & img*/
-.dep-img-desc{
-  display:flex;
-  gap: 20px;
-  padding-top: 20px;
-}
-
-.department{
-  position: relative;
-}
-
-.dep-header h2{
-  position:absolute;
-}
-
-
-
-.dep-header a,
-.dep-header{
+.dep-header a{
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #000;
-  text-align: center;
-  background-color: rgba(196,208,213,1);
+  background-color: rgb(196,208,213);
 }
 
 .dep-img{
-  position: sticky;
-  border: 10px solid #fff;
-}
-
-
-.dep-header h2{
+  border: 10px solid white;
   position: relative;
-  padding: 5px;
+}
+
+.dep-header{
+  position: relative;
+  border-radius: 15px;
 }
 
 
+/*Green background with school calender*/
+.empty{
+  padding-top: 600px;
+  padding-bottom: 20px;
+  background-color: #1E6334;
+}
 
+.empty p{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.empty hr {
+  border: 2px solid #e8ec10;
+}
+
+/*Testimonials*/
