@@ -130,6 +130,19 @@ header h1 {
     background: #f0b1d4;
   }
 
+/*slide show container*/
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  background-color: #1E6334;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
 /* Holding image and text in the slide show*/
 .mySlides{
     position: relative;
@@ -139,7 +152,7 @@ header h1 {
 /*Centering text on slide show image*/
 .slide-text{
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
     width: 100%;
     height:auto;
@@ -153,22 +166,224 @@ header h1 {
 
 /*Changing color of centered text on slide bar*/
 .slide-text h3{
-    color: azure;
+    color: white;
     padding-left: 30px;
     font-weight: bolder;
   }
 
   .slide-text h1{
-    color: #f0b1d4;
+    color: #f3f162;
+    font-weight: bold;
   }
 
+  .left-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*Adjusting h1,h3 and btn*/
+
+  .left-item h1, h3{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .left-item h1{
+    margin-right: 130px;
+  }
+
+  .left-item.one {
+    margin-right: 100px;
+  }
+
+  .left-item.one button{
+    margin-left: 40px;
+  }
+
+  .left-item.two{
+    margin-right: 200px;
+  }
+
+  .left-item.two h3{
+    margin-left: 60px;
+  }
+
+
+  .left-item.three h3{
+    margin-right: 300px;
+  }
+
+  .left-item.four h3{
+    margin-right: 495px;
+  }
+
+
+  .slide-text.five h3{
+   margin-right: 200px;
+  }
+
+  .slide-text.five button{
+    margin-left: 200px;
+
+  }
+
+  
   /*Text over btn*/
 .slide-text button{
-  margin-top: 40px;
-  margin-right: 25px;
+  margin-top: 10px;
+  margin-right: 100px;
+  margin-bottom: 10px;
   align-items: center;
   padding: 12px;
-  border-radius:15px;
+  border-radius:10px;
   border-bottom: #000;
+  background-color: rgb(219, 209, 209);
 }
+
+.slide-text button:hover{
+  background-color: #f0ed6a;
+}
+
+.slide-text button a{
+  color: #000;
+  font-weight: bold;
+  font-size: large;
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -50px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* change next  and previous button over hover */
+.prev:hover,.next:hover{
+  color: rgba(0,0,0, 0.4);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: rgb(236, 224, 47);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+.text-align-center{
+  position: relative;
+  margin-top: -20px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Motto*/
+.motto{
+  position: relative;
+  margin-top: -2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #1E6334;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.explaination{
+  color: white;
+}
+
+
+/*School departments placeholder*/
+
+.department-holder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(196,208,213,1);
+  padding-bottom: 50px;
+  gap: 30px;
+}
+
+.dep-text{
+  text-align: center;
+  padding: 10px;
+}
+
+  /*Center h1 & img*/
+.dep-img-desc{
+  display:flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.department{
+  position: relative;
+}
+
+.dep-header h2{
+  position:absolute;
+}
+
+
+
+.dep-header a,
+.dep-header{
+  color: #000;
+  text-align: center;
+  background-color: rgba(196,208,213,1);
+}
+
+.dep-img{
+  position: sticky;
+  border: 10px solid #fff;
+}
+
+.dep-header h2{
+  position: relative;
+  padding: 5px;
+}
+
+
 
