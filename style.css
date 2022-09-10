@@ -372,7 +372,7 @@ header h1 {
 /*Green background with school calender*/
 .empty{
   padding-top: 600px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   background-color: #1E6334;
 }
 
@@ -387,3 +387,57 @@ header h1 {
 }
 
 /*Testimonials*/
+.testimonials{
+  background-color: #1E6334;
+  padding-bottom: 30px;
+}
+
+.testimony{
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  background-color: #ddd;
+}
+
+/*Centering items in - Graduates current school*/
+.universities-logos{
+  text-align: center;
+}
+
+.graduates-school h1{
+  text-align: center;
+  color: #1E6334;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/*Spacing the logos*/
+.logo{
+  margin-bottom: 30px;
+}
+
+.logo.first-row,
+.logo.second-row,
+.logo.third-row
+{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/*Contact and disclaimer container*/
+.policy-contact-container{
+background-color: #1E6334;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+/*Centering disclaimer*/
+.disclaimer{
+  background-color: #ddd;
+  padding: 10px;
+  font-size: 15px;
+}
+
+
+
