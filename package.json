@@ -1,0 +1,22 @@
+{
+  "name": "ais",
+  "version": "1.0.0",
+  "description": "Creating a copy of AIS school website(aisghana.org)",
+  "main": "ais.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kwamecody/AIS-Ghana.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kwamecody/AIS-Ghana/issues"
+  },
+  "homepage": "https://github.com/Kwamecody/AIS-Ghana#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.9.1"
+  }
+}

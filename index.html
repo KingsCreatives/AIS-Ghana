@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>AIS Ghana</title>
 </head>
@@ -22,7 +23,7 @@
 
         <!--Nav items container-->
             <div class="navbar">
-                <a href="https://www.aisghana.org/">HOME</a>
+                <a href="https://www.aisghana.org/" id="one">HOME</a>
                 <div class="dropdown">
                     <button class="dropbtn">ABOUT AIS
                       <i class="fa fa-caret-down"></i>
@@ -76,7 +77,7 @@
                       <a href="https://www.aisghana.org/health-services">Health Services</a>
                     </div>
                 </div>
-                <a href="https://bit.ly/3D87jQC">CONTACT</a>
+                <a href="https://bit.ly/3D87jQC" id="two">CONTACT</a>
             </div>
         </div>
 
@@ -224,15 +225,45 @@
       <hr>
   </div>
 
-  <!--Parent testimonials-->
-  <div class="testimonials">
-      <div class="testimony one">1</div>
-      <div class="testimony two">2</div>
-      <div class="testimony three">3</div>
-      <div class="testimony four">4</div>
-      <div class="testimony five">5</div>
-      <div class="testimony six">6</div>
+  <div class="testimonial-container">
+      <div class="testimony one">
+        <h2>Parents talk about why they love AIS...</h2>
+        <p>"The unity and love of the teachers. The strong Christian foundation and excellent academics"</p>
+    </div>
+      <div class="testimony two">
+        <h2>Parents talk about why they love AIS...</h2>
+        <p>"The family-oriented environment and the Christian perspective. The teachers are very friendly and approachable. The students seem to enjoy each other-even across grade levels!"</p>
+      </div>
+      <div class="testimony three">
+        <h2>Parents talk about why they love AIS...</h2>
+        <p>"The Christian education and community and family spirit at the school."</p>
+      </div>
+      <div class="testimony four">
+        <h2>Parents talk about why they love AIS...</h2>
+        <p>"The personal attention the teachers give to educate and instill integrity in the students. Everyone is so friendly. It is unusual."</p>
+      </div>
+      <div class="testimony five">
+        <h2>Parents talk about why they love AIS...</h2>
+        <p>"The teachers love and care for my children spiritually as well as educationally."</p>
+      </div>
+      <div class="testimony six">
+        <h2>Parents talk about why they love AIS...</h2>
+        <p>"Discipline and how The Word of God is used implicitly or explicitly to entice children to do the right things."</p>
+      </div>
   </div>
+ 
+ 
+  <!-- The dots/circles -->
+<div style="text-align:center" class="text-align-center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+  <span class="dots" onclick="currentSlide(4)"></span>
+  <span class="dots" onclick="currentSlide(5)"></span>
+  <span class="dots" onclick="currentSlide(6)"></span>
+</div>  
+</div>
+  
 
   <!--Graduates current schools-->
   <div class="graduates-school">
@@ -264,27 +295,70 @@
           </div>
       </div>
   </div>
-  <div class="policy-contact-container">
-      <div class="disclaimer">
-          <p>
-            <b>Non-Discrimination Policy:</b> American International School does not discriminate on the basis of race, color, national or ethnic origin in administration of its educational policies, admissions policies, tuition assistance programs, athletic or other school-administered programs, nor in the hiring of teachers or administrative staff.
-          </p>
-      </div>
-      <div class="contacts">
-
-      </div>
-  </div>
-      
-
-     
-
     </main>
+
     <footer>
+      <div class="policy-contact-container">
+        <div class="disclaimer">
+            <p>
+              <b>Non-Discrimination Policy:</b> American International School does not discriminate on the basis of race, color, national or ethnic origin in administration of its educational policies, admissions policies, tuition assistance programs, athletic or other school-administered programs, nor in the hiring of teachers or administrative staff.
+            </p>
+        </div>
+      </div>
+        <div class="contacts">
+              <div class="call-us">
+                <h2>CALL US</h2>
+                <p>(+233) 28 954 7951<br>(+233) 50 145 4291</p>
+                
+              </div>
+              <div class="email">
+                <h2>Email Us</h2>
+                <p>info@aisghana.org</p>
+              </div>
+              <div class="office-hours">
+                <h2>Office Hour(Summer)</h2>
+                <p>Mon - Fri: 7:30am (9am) - 4:00pm (2pm)</p>
+              </div>
+        </div>
+        <div class="map">
+          <a href="https://www.google.com/maps/@5.655564,-0.147036,12z?hl=en"><img src="./img/map.PNG"></a>
+        </div>
+        <div class="locations-and-associations">
+             <div class="affiliations">
+                <div class="affiliates">
+                    <div><a href="#"><img src="./img/associations/b3a758_76f19de2642f475aa587e0c0d7e531d4_mv2.webp"></a></div>
+                    <div><a href="#"><img src="./img/associations/download.webp"></a></div>
+                    <div><a href="#"><img src="./img/associations/middle-states-association-commissions-on.webp"></a></div>
+                    <div> <a href="#"><img src="./img/associations/ncaa_logo.webp"></a> </div>
+                    <div><a href="#"><img src="./img/associations/Screen-Shot-2020-04-02-at-7_15_32-PM-900.webp"></a></div>
+                    <div><a href="#"><img src="./img/associations/sevenstar-logo-notag.webp" style="background-color:white; padding: 10px; "></a></div>
+                </div>
+                <div class="elementary-location">
+                    <h3 style="color: white;">Elementary Campus</h3>
+                    <p style="color: white;">No 1 Jungle Road,<br> 
+                      East Legon, Accra-Ghana.</p>
+                </div>
+             </div>
+             <div class="SHS-and-Social-Handles">
+                   <div class="shs-campus">
+                     <h3 style="color: white;">Secondary Campus</h3>
+                     <p style="color: white;">Nii Klu Osae Ave, Otinshie Road<br>
+                      East Legon, Accra-Ghana.</p>
+                   </div>
+                   <div class="social-handles">
+                    <a href="http://www.facebook.com/accra.ais" class="fa fa-facebook"></a>
+                    <a href="https://bit.ly/3daUbPV" class="fa fa-twitter">
+                      <a href="https://www.instagram.com/aisghana/" class="fa fa-instagram"></a>
+                   </div>
+             </div>
+            </div>
+             <br>
+             <div class="copy-right">
+                    <p>© 2022- AIS - All Rights Reserved</p>
+             </div>
 
     </footer>
     
-
-
     <script src="./ais.js"></script>
 </body>
 </html>

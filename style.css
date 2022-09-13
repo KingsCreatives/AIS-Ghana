@@ -2,6 +2,7 @@ body{
     box-sizing: border-box;
     font-family: Verdana,  Tahoma, sans-serif;
     height: 100vh;
+    height: 100vh;
     overflow-x: auto;
     overflow-y: scroll;
 }
@@ -33,6 +34,8 @@ header h1 {
     text-align: center;
 }
 
+
+
 /* Navbar container */
 .navbar {
     overflow: hidden;
@@ -45,10 +48,13 @@ header h1 {
     font-size: 16px;
     color: #1E6334;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
     font-weight: bold;
+
   }
+
+  
   
 /* The dropdown container */
 .dropdown {
@@ -135,12 +141,10 @@ header h1 {
 .slideshow-container {
   max-width: 100%;
   position: relative;
-  margin: auto;
-  background-color: #1E6334;
-}
+  margin: auto;}
 
 /* Hide the images by default */
-.mySlides {
+.mySlides{
   display: none;
 }
 
@@ -283,7 +287,8 @@ header h1 {
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot,
+.dots {
   cursor: pointer;
   height: 8px;
   width: 8px;
@@ -374,6 +379,7 @@ header h1 {
   padding-top: 600px;
   padding-bottom: 10px;
   background-color: #1E6334;
+  padding-bottom: 30px;
 }
 
 .empty p{
@@ -386,18 +392,7 @@ header h1 {
   border: 2px solid #e8ec10;
 }
 
-/*Testimonials*/
-.testimonials{
-  background-color: #1E6334;
-  padding-bottom: 30px;
-}
 
-.testimony{
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  background-color: #ddd;
-}
 
 /*Centering items in - Graduates current school*/
 .universities-logos{
@@ -435,9 +430,133 @@ padding-bottom: 5px;
 /*Centering disclaimer*/
 .disclaimer{
   background-color: #ddd;
-  padding: 10px;
+  padding: 20px;
   font-size: 15px;
 }
 
 
+/*Testimonial slides*/
+.testimonial-container{
+  padding-top: 30px;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  background-color: #ddd;
+  margin-top: -15px;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
 
+/*Hiding testimony */
+.testimony {
+  display: none;
+  position: relative;
+  padding-bottom: 70px;
+  padding-top: 30px;
+}
+
+/*Changing footer background*/
+
+footer{
+  background-color: #1E6334;
+}
+
+/*Centering Contacts container*/
+.contacts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+
+
+.contacts p{
+  color: #f1de2c;
+  font-weight: bold;
+}
+
+.contacts h2{
+  color:#f9f9f9;
+  padding-bottom: 40px;
+}
+
+.email p{
+color: white;
+}
+
+
+/*Affiliatins and Locations*/
+.locations-and-associations,
+.affiliations,
+.SHS-and-Social-Handles
+{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.affiliates{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:10px;
+}
+
+/*Yellow border on */
+.SHS-and-Social-Handles{
+  border-left: 2px solid yellow;
+  padding-left: 20px;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 14px 14px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  gap:25px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  margin-right: 20px;
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  margin-right: 20px;
+  background: #55ACEE;
+  color: white;
+}
+
+/*Instagram*/
+.fa-instagram{
+  margin-left: 5px;
+  color: white;
+  background:#f01c86;
+}
+
+
+/*Copy Right*/
+.copy-right{
+  color: yellow;
+  background-color: rgb(19, 18, 18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0px;
+  margin-bottom: 15;
+}
